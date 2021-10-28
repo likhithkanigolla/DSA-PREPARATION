@@ -1,4 +1,4 @@
-
+//Different Operators AND, NOT, XOR, OR
 
 import java.util.*;
 class operators{
