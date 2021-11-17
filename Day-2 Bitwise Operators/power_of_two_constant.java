@@ -6,11 +6,8 @@
 //n  =40 - 101000 
 //n-1=39 - 100111 doing the and of these both two gives 
 //         ______
-//         100000 = 32 and count increases by 1
-//         011111 = 31(n-1:32-1=31)
-//         ______
-//         000000 = 0 Count increases by two and loop terminates
-// This is how the condition works
+//n&(n-1)  100000  = 32 so its not equal to zero so its false
+//         ‾‾‾‾‾‾
 
 import java.util.*;
 class poweroftwo{
