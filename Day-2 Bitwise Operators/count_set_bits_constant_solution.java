@@ -19,4 +19,24 @@
  right shift and then verifies the count and added the things with the res
 ∴ res = 2+0+0+0=2
 */
+import java.util.*;
 
+class tableinit{
+    static int []table= new int[256];
+    public static void gentable(){ // generating table 
+        for(int i=0;i<256;i++){
+            table[i]=(i&1)+table[i/2];
+        } //end of the for loop
+    }
+    public static int verifyset(int n){
+        return table[n & 0xff]+ table[(n>>8) & 0xff] + table [(n>>16) & 0xff]+ table[(n>>24)];
+        //shifting and adding the things by using the table generated from the previous function
+    }
+    public static void main(String[] args){ //driver code
+        gentable(); //init table from the function
+        Scanner scn = new Scanner(System.in); //taking input
+        int n = scn.nextInt(); //taking n integer
+        System.out.println(verifyset(n)); // init function and on it 
+        scn.close(); // scanning the close 
+    }
+}
