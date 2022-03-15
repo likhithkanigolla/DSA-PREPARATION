@@ -8,7 +8,7 @@ that means the solution is not possible if the solution returns the  that means 
 import java.io.*;
 import java.util.*;
 
-class GFG {
+class RopeCut {
 
 	
 	static int maxCuts(int n, int a, int b, int c)
