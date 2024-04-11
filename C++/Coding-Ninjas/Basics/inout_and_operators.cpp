@@ -6,6 +6,7 @@ int main()
     /* code */
 
     // Inputs can be taken through the cin and outputs can be done therough cout 
+    //  Heello
 
     int var1, var2;
     string str1;
