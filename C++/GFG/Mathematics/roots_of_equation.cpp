@@ -17,19 +17,19 @@ void findRoots(int a, int b, int c)
 
     if (d > 0) {
         cout << "Roots are real and different \n";
-        cout << (double)(-b + sqrt_val) / (2 * a) << "\n"
-             << (double)(-b - sqrt_val) / (2 * a);
+        cout << (-b + sqrt_val) / (2 * a) << "&"
+             << (-b - sqrt_val) / (2 * a);
     }
     else if (d == 0) {
         cout << "Roots are real and same \n";
-        cout << -(double)b / (2 * a);
+        cout << -b / (2 * a);
     }
     else // d < 0
     {
         cout << "Roots are complex \n";
-        cout << -(double)b / (2 * a) << " + i"
-             << sqrt_val / (2 * a) << "\n"
-             << -(double)b / (2 * a) << " - i"
+        cout << -b / (2 * a) << " + i"
+             << sqrt_val / (2 * a) << "&"
+             << -b / (2 * a) << " - i"
              << sqrt_val / (2 * a);
     }
 }
@@ -37,8 +37,9 @@ void findRoots(int a, int b, int c)
 // Driver code
 int main()
 {
-    int a = 1, b = -7, c = 12;
-
+    int a,b,c;
+    cout << " Enter the numbers a, b, c seperated by spaces: ";
+    cin>>a>>b>>c;
     // Function call
     findRoots(a, b, c);
     return 0;
