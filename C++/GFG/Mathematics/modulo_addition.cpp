@@ -16,5 +16,5 @@ int main(){
     long long int a,b;
     cout<< "Enter two numbers seperated by a space: ";
     cin>>a>>b; 
-    cout<<modulo_addition(a,b);
+    cout<<modulo_addition(a,b)<<endl;
 }
