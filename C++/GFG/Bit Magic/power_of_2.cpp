@@ -7,6 +7,7 @@ bool isPowerOfTwo(int n) {
         return false;
     
     // Check if 'n' is a power of 10
+    // 
     double exponent = log2(n);
     return exponent == floor(exponent);
 }
