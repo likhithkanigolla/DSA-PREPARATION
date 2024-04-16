@@ -19,6 +19,7 @@ bool check_Kth_bit(int n, int k){
     return false;
 }
 
+
 int main(){
     int n, k; 
     cout<<"Enter a Number: "; 
