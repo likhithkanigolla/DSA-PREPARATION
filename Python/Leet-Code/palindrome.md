@@ -23,7 +23,7 @@ But after looking at the testcases it should be able to solve for the negitive n
 <!-- Add your space complexity here, e.g. $$O(n)$$ -->
 
 # Code
-```
+```py
 class Solution(object):
     def isPalindrome(self, x):
         """
@@ -32,4 +32,48 @@ class Solution(object):
         """
         return str(x)[::-1]==str(x)
         
+```
+
+# Best Approch (Space Complexity)
+```py
+class Solution(object):
+    def isPalindrome(self, x):
+        """
+        :type x: int
+        :rtype: bool
+        """
+        x = str(x)
+        L = 0
+        R = len(x)-1
+
+        while L < R:
+
+            if x[L] != x[R]:
+                return False
+            L += 1
+            R -= 1
+        return True
+```
+Explanation:    
+
+
+# Best Approch (Time Complexity)
+```py
+class Solution(object):
+    def isPalindrome(self, x):
+        """
+        :type x: int
+        :rtype: bool
+        """
+        if x < 0 or (x % 10 == 0 and x != 0):
+            return False
+
+        ogNum = x
+        reversedNum = 0
+        while x > 0:
+            lastDigit = x % 10
+            reversedNum = reversedNum * 10 + lastDigit
+            x //= 10
+
+        return ogNum == reversedNum   
 ```
