@@ -16,10 +16,10 @@ But after looking at the testcases it should be able to solve for the negitive n
 
 
 # Complexity
-- Time complexity: O(1)
+- Time complexity: $$O(1)- Beats -66.99$$
 <!-- Add your time complexity here, e.g. $$O(n)$$ -->
 
-- Space complexity: O(1)
+- Space complexity: $$O(1) - Beats - 22.66% $$
 <!-- Add your space complexity here, e.g. $$O(n)$$ -->
 
 # Code
@@ -33,31 +33,7 @@ class Solution(object):
         return str(x)[::-1]==str(x)
         
 ```
-
-# Best Approch (Space Complexity)
-```py
-class Solution(object):
-    def isPalindrome(self, x):
-        """
-        :type x: int
-        :rtype: bool
-        """
-        x = str(x)
-        L = 0
-        R = len(x)-1
-
-        while L < R:
-
-            if x[L] != x[R]:
-                return False
-            L += 1
-            R -= 1
-        return True
-```
-Explanation:    
-
-
-# Best Approch (Time Complexity)
+# Best Approch (Time)
 ```py
 class Solution(object):
     def isPalindrome(self, x):
@@ -76,4 +52,25 @@ class Solution(object):
             x //= 10
 
         return ogNum == reversedNum   
+```
+
+# Best Approch (Space)
+```py
+class Solution(object):
+    def isPalindrome(self, x):
+        """
+        :type x: int
+        :rtype: bool
+        """
+        x = str(x)
+        L = 0
+        R = len(x)-1
+
+        while L < R:
+
+            if x[L] != x[R]:
+                return False
+            L += 1
+            R -= 1
+        return True
 ```
