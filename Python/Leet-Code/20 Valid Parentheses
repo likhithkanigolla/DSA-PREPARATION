@@ -1,0 +1,70 @@
+# Intuition
+<!-- Describe your first thoughts on how to solve this problem. -->
+First i thought to solve it by spliting into list and then compare each character but i am stuck at the point. Later looking at the hints got the clue.
+
+# Approach
+<!-- Describe your approach to solving the problem. -->
+First pushed into the stack but i am comparing only the first and the second element this only passed only 56 out of the 96 cases. Because it failed for the test cases like '{[]}' because it is not working since it compares only the start two characters so it returns the false but its true since its the properly closed. 
+
+# Complexity
+- Time complexity: $$O(n)$$
+<!-- Add your time complexity here, e.g. $$O(n)$$ -->
+
+- Space complexity: $$O(n)$$
+<!-- Add your space complexity here, e.g. $$O(n)$$ -->
+
+# Initial Code 
+```py
+class Solution(object):
+    def isValid(self, s):
+        """
+        :type s: str
+        :rtype: bool
+        """
+        stack=[]
+        for i in s:
+            print(i)
+            if len(stack)==0:
+                stack.append(i)
+            else:
+                if stack[0]=='(' and i!=')':
+                    stack.pop()
+                    return False
+                elif stack[0]=='{' and i!='}':
+                    stack.pop()
+                    return False
+                elif stack[0]=='[' and i!=']':
+                    stack.pop()
+                    return False
+                else:
+                    return True
+        
+```
+
+# Code
+```py
+class Solution(object):
+    def isValid(self, s):
+        stack = [] 
+        for c in s: 
+            if c in '([{': 
+                stack.append(c) 
+            else:
+                if not stack or \
+                    (c == ')' and stack[-1] != '(') or \
+                    (c == '}' and stack[-1] != '{') or \
+                    (c == ']' and stack[-1] != '['):
+                    return False
+                stack.pop() 
+        return not stack 
+```
+# Explanation
+- create an empty stack to store opening brackets
+- loop through each character in the string
+- if the character is an opening bracket
+- push it onto the stack
+- if the character is a closing bracket
+- the string is not valid, so return false
+- otherwise, pop the opening bracket from the stack
+- if the stack is empty, all opening brackets have been matched with their corresponding closing brackets,
+- so the string is valid, otherwise, there are unmatched opening brackets, so return false
