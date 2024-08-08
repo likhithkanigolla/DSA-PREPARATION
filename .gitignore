@@ -36,7 +36,7 @@
 !*/
 !*.cpp
 
-C++/Striver-A2Z-Sheet/Step-0-Runner/*
-C++/Striver-A2Z-Sheet/Step-0-Runner/output.txt
-C++/Striver-A2Z-Sheet/Step-0-Runner/input.txt
-C++/Striver-A2Z-Sheet/Step-0-Runner/demo.cpp
+./C++/Striver-A2Z-Sheet/Step-0-Runner/*
+./C++/Striver-A2Z-Sheet/Step-0-Runner/output.txt
+./C++/Striver-A2Z-Sheet/Step-0-Runner/input.txt
+./C++/Striver-A2Z-Sheet/Step-0-Runner/demo.cpp
