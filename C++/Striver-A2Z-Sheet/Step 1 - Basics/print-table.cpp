@@ -13,6 +13,14 @@ void printTableReverse(int n){
     }
 }
 
+void printTableWhileLoop(int n) {
+    int i = 1;
+    while (i <= 10) {
+        cout << n << " x " << i << " = " << n * i << endl;
+        i++;
+    }
+}
+
 int main() {
     int n;
     cin >> n;
