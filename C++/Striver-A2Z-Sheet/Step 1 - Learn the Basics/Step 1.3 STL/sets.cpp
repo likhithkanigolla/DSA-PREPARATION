@@ -62,3 +62,8 @@ void explainSet(){
     // rest all functions are same as vectors
     // empty(), size(), insert(), erase(), swap(), clear()
 }
+
+int main(){
+    explainSet();
+    return 0;
+}

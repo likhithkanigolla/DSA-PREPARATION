@@ -60,3 +60,9 @@ void explainMultiset(){
     auto it_end = s.find(5);
     s.erase(it_start, it_end); // It will erase 3 to 5 but not 5 
 }
+
+
+int main(){
+    explainMultiset();
+    return 0;
+}
