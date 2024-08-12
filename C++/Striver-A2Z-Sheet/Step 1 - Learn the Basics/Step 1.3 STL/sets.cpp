@@ -6,6 +6,13 @@ void explainSet(){
     // Set is an associative container that contains a sorted set of unique objects of type key
     // Set is implemented as a balanced tree structure that is log(N) for insert and find
     // Set is usually used to store unique elements
+    // Complexities
+    // insert(): O(logN)
+    // find(): O(logN)
+    // erase(): O(logN)
+    // size(): O(1)
+    // empty(): O(1)
+    
     // Syntax
     // set<data_type> Set_name;
     // set<data_type, greater<data_type>> Set_name; // for decreasing order
@@ -50,7 +57,7 @@ void explainSet(){
 
     auto it_start = s.find(3);
     auto it_end = s.find(5);
-    s.erase(it_start, it_end); // It will erase 3 to 5 but not 5
+    s.erase(it_start, it_end); // It will erase 3 to 5 but not 5 
 
     // rest all functions are same as vectors
     // empty(), size(), insert(), erase(), swap(), clear()
