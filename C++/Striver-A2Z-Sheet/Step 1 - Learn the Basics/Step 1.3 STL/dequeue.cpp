@@ -34,3 +34,8 @@ void explainDeque(){
     // rest all functions are same as vectors
     // begin(), end(), rbegin(), rend(), empty(), size(), insert(), erase(), swap(), clear()
 } 
+
+int main(){
+    explainDeque();
+    return 0;
+}
