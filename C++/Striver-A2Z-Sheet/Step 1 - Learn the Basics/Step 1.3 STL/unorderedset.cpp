@@ -12,6 +12,8 @@ void explainUnordedSet(){
     // erase(): O(1)
     // size(): O(1)
     // empty(): O(1)
+
+    // Complexity will become O(N) in worst case such as all elements have same hash value or all elements are inserted in the same bucket
     
     // Syntax
     // unordered_set<data_type> Unordered_set_name;
