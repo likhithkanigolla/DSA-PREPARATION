@@ -48,3 +48,8 @@ void explainMultiMap(){
 
     int count = m.count(5); // 0 or 1, as map
 }
+
+int main(){
+    explainMultiMap();
+    return 0;
+}
