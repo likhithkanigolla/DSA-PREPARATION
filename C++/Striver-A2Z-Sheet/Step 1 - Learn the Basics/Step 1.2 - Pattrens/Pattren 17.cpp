@@ -31,6 +31,46 @@ void alphaHill(int n) {
     }
 }
 
+// Approach 2
+// class Solution {
+//    public:
+//     void pattern17(int n) {
+//         for (int cnt = 1; cnt <= n; cnt++) {
+//             for (int i = n - cnt; i >= 1; i--) {
+//                 cout << " ";
+//             }
+//             for (char j = 1; j <= (2 * cnt) - 1; j++) {
+//                 if (j > cnt) {
+//                     cout << char(64 + ((2 * cnt) - j));
+//                 } else {
+//                     cout << char(64 + j);
+//                 }
+//             }
+//             cout << endl;
+//         }
+//     }
+// };
+
+// Apprach 3
+// class Solution {
+//    public:
+//     void pattern17(int n) {
+//         for (int cnt = 1; cnt <= n; cnt++) {
+//             for (int i = n - cnt; i >= 1; i--) {
+//                 cout << " ";
+//             }
+//             for (char j = 1; j <= (2 * cnt) - 1; j++) {
+//                 if (j > cnt) {
+//                     cout << char(64 + ((2 * cnt) - j));
+//                 } else {
+//                     cout << char(64 + j);
+//                 }
+//             }
+//             cout << endl;
+//         }
+//     }
+// };
+
 int main() {
     int n;
     cin >> n;
