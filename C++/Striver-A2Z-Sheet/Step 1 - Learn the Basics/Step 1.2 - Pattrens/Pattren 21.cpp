@@ -24,7 +24,6 @@ void getStarPattern(int n) {
             for(int j=1;j<=n;j++){
                 cout<<"*";
             }
-            cout<<endl;
         }
         else{
             cout<<"*";
@@ -32,8 +31,8 @@ void getStarPattern(int n) {
                 cout<<" ";
             }
             cout<<"*";
-            cout<<endl;
         }
+        cout<<endl;
     }
 }
 
