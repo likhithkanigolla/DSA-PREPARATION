@@ -11,5 +11,3 @@ Notes section to save your notes for quick revision.
 Used by over 1.5M+ people worldwide in the last 1 year.
 All the lectures are recorded in 4K.
 None of the paid/unpaid courses have these many modules.
-
-
