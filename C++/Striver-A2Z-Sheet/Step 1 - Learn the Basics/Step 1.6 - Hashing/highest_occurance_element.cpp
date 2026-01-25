@@ -41,6 +41,7 @@ public:
                 highest_occuring_element=current_element;
             }
             else if(current_element_frequency==highest_frequency_count){
+                // If there are multiple elements that appear a maximum number of times, find the smallest of them.
                 highest_occuring_element=min(highest_occuring_element, current_element);
             }
 
@@ -49,3 +50,11 @@ public:
         return highest_occuring_element;
     }
 };
+
+int main() {
+    Solution sol;
+    vector<int> nums = {1, 2, 2, 3, 3, 3, 4};
+    int result = sol.mostFrequentElement(nums);
+    cout << "The most frequent element is: " << result << endl;
+    return 0;
+}

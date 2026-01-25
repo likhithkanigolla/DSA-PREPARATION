@@ -1,3 +1,5 @@
+#include <iostream>
+using namespace std;
 class Solution {
 public:
     int reverseNumber(int n) {
@@ -14,3 +16,11 @@ public:
 
     }
 };
+
+int main() {
+    int n;
+    cin >> n;
+    Solution sol;
+    cout << sol.reverseNumber(n) << endl;
+    return 0;
+}

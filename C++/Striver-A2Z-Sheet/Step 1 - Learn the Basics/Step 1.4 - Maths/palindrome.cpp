@@ -1,3 +1,5 @@
+#include <iostream>
+using namespace std;
 class Solution {
    public:
     bool isPalindrome(int n) {
@@ -14,3 +16,11 @@ class Solution {
         return originalNum==revNum;
     }
 };
+
+int main() {
+    int n;
+    cin >> n;
+    Solution sol;
+    cout << (sol.isPalindrome(n) ? "Yes" : "No") << endl;
+    return 0;
+}

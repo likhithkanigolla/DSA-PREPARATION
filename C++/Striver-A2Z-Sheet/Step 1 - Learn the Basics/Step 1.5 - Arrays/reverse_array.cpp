@@ -13,3 +13,16 @@ public:
         }
     }
 };
+
+int main() {
+    Solution sol;
+    int arr[] = {1, 2, 3, 4, 5};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    sol.reverse(arr, n);
+    cout << "Reversed array: ";
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+    return 0;
+}
