@@ -19,3 +19,11 @@ int main() {
     cout << "The sum of the array elements is: " << result << endl;
     return 0;
 }
+
+// Complexity Analysis:
+// Time Complexity: O(N)
+// Where N is the number of elements in the array. We traverse the array once.
+// Space Complexity: O(1)
+// We are using only a constant amount of extra space for the loop variable 'i' and
+// 'sum_of_arr'.
+// The space used for input does not count towards space complexity.

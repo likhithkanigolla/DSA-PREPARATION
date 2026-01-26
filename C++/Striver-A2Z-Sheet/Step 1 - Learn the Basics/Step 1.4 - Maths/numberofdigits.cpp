@@ -30,3 +30,16 @@ int countDigitsRecursive(int n) {
 int countDigitsString(int n) {
     return std::to_string(n).length();
 }
+
+// Complexity Analysis for all approaches:
+// Time Complexity:
+// 1. Logarithmic Approach: O(1) for the logarithmic calculation.
+// 2. Iterative Division: O(D) where D is the number of digits in
+//    n, as we divide n by 10 until it becomes 0.
+// 3. Recursive Division: O(D) where D is the number of digits in
+//    n, as we make a recursive call for each digit.
+// 4. String Conversion: O(D) where D is the number of digits in
+//    n, as converting to string involves processing each digit.
+// Space Complexity: O(1) for all approaches except Recursive Division,
+// which has O(D) space complexity due to the recursion stack.
+

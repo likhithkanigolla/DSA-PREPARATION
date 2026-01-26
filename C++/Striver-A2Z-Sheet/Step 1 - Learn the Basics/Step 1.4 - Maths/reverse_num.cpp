@@ -24,3 +24,11 @@ int main() {
     cout << sol.reverseNumber(n) << endl;
     return 0;
 }
+
+// Complexity Analysis:
+// Time Complexity: O(D)
+// Where D is the number of digits in the input number. We traverse each digit once.
+// Space Complexity: O(1)
+// We are using only a constant amount of extra space for variables like 'revNum',
+// 'originalNum', and 'lastDigit'.
+// The space used for input does not count towards space complexity.

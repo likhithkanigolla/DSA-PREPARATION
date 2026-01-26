@@ -65,3 +65,11 @@ int main() {
     cout << "The second most frequent element is: " << result << endl;
     return 0;
 }
+
+// Complexity Analysis:
+// Time Complexity: O(N)
+// Where N is the number of elements in the input array. We traverse the array once to
+// build the frequency map and then traverse the map to find the second most frequent element.
+// Space Complexity: O(M)
+// Where M is the number of unique elements in the input array. In the worst case,
+// all elements are unique, and we store each element in the frequency map.

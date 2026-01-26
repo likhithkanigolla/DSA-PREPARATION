@@ -31,3 +31,11 @@ int countDigit(int n) {
     if (n == 0) return 1;
     return floor(log10(abs(n))) + 1;
 }
+
+// Complexity Analysis for all approaches:
+// Time Complexity:
+// 1. Brute Force: O(N * D) where N is the range size (high - low + 1) and D is the number of digits in the largest number.
+// 2. Digit Extraction: O(D) where D is the number of digits in n
+// 3. Logarithmic Approach: O(1) for the logarithmic calculation, but O(D) to extract digits if needed.
+// Space Complexity: O(1) for all approaches as they use a constant amount of extra
+// space regardless of input size.

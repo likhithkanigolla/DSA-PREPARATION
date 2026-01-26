@@ -24,3 +24,10 @@ int main() {
     }
     return 0;
 }
+
+
+// Complexity Analysis:
+// Time Complexity: O(N)
+// Where N is the number of elements in the array. We traverse the array once.
+// Space Complexity: O(1)
+// We are using only a constant amount of extra space for the loop variable 'i'.

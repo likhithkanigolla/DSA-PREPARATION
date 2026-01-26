@@ -33,3 +33,12 @@ int main() {
     cout << sol.primeUptoN(n) << endl;
     return 0;
 }
+
+// Complexity Analysis:
+// Time Complexity: O(N√N)
+// Where N is the input number. For each number up to N, we check if it is prime by testing divisibility up to its square root.
+// Space Complexity: O(P)
+// Where P is the number of prime numbers up to N. In the worst case, we
+// store all prime numbers found in a vector.
+// The space used for input does not count towards space complexity.
+

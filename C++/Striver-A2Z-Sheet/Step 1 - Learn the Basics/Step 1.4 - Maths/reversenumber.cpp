@@ -54,3 +54,12 @@ int main() {
 
     return 0;
 }
+
+// Complexity Analysis for all approaches:
+// Time Complexity: O(D)
+// Where D is the number of digits in the input number. We traverse each digit once.
+// Space Complexity:
+// 1. String Conversion: O(D) for the string representation.
+// 2. Using Stacks: O(D) for the stack storing digits.
+// 3. Recursion: O(D) for the recursion stack.
+// The space used for input does not count towards space complexity.

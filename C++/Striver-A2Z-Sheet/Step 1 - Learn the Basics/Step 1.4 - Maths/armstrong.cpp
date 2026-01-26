@@ -25,3 +25,10 @@ int main() {
     cout << (sol.isArmstrong(n) ? "Yes" : "No") << endl;
     return 0;
 }
+
+// Complexity Analysis:
+// Time Complexity: O(D)
+// Where D is the number of digits in the input number. We traverse each digit once.
+// Space Complexity: O(1)
+// We are using only a constant amount of extra space for variables like 'digits', 'copy
+// _n', 'calculate', and 'lastDigit'.

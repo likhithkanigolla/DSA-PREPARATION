@@ -22,3 +22,11 @@ int main() {
     cout << sol.factorial(n) << endl;
     return 0;
 }
+
+// Complexity Analysis:
+// Time Complexity: O(N)
+// Where N is the input number. We multiply numbers from 1 to N to compute the
+// factorial.
+// Space Complexity: O(1)
+// We are using only a constant amount of extra space for the variable 'result' and
+// the loop variable 'i'.

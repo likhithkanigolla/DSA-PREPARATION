@@ -29,3 +29,13 @@ int main() {
     cout << (sol.isPerfect(n) ? "Yes" : "No") << endl;
     return 0;
 }
+
+// Complexity Analysis:
+// Time Complexity: O(√N)
+// Where N is the input number. We check for divisors up to the square root of
+// N to compute the sum of divisors.
+// Space Complexity: O(1)
+// We are using only a constant amount of extra space for variables like 'sum' and
+// the loop variable 'i'.
+// The space used for input does not count towards space complexity.
+
